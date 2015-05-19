@@ -20,13 +20,13 @@
 (add-to-list 'auto-mode-alist '("\\.cljs?$" . clojure-mode))
 
 ;; nRepl
-; (package-require 'cider)
-; (eval-after-load "clojure-mode" '(require 'cider))
-; (setq nrepl-lein-command "lein")
-; (setq nrepl-server-command "echo \"lein repl :headless\" | $SHELL -l")
+(package-require 'cider)
+(eval-after-load "clojure-mode" '(require 'cider))
+(setq nrepl-lein-command "lein")
+(setq nrepl-server-command "echo \"lein repl :headless\" | $SHELL -l")
 
 ;; cljsbuild
-; (package-require 'cljsbuild-mode)
+(package-require 'cljsbuild-mode)
 
 ;;; Inferior lisps
 
