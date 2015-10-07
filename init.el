@@ -56,7 +56,7 @@
 ;; ELPA
 (setq package-user-dir (concat dotfiles-dir "elpa"))
 (require 'package)
-(dolist (source '(("melpa" . "http://melpa.milkbox.net/packages/")
+(dolist (source '(("melpa" . "http://melpa.org/packages/")
                   ("marmalade" . "http://marmalade-repo.org/packages/")
                   ("elpa" . "http://tromey.com/elpa/")))
   (add-to-list 'package-archives source t))
@@ -81,9 +81,6 @@
 ;; Automatically reload unchanged buffers when source file is changed
 (global-auto-revert-mode t)
 
-;; Modes
-(package-require 'fsharp-mode)
-
 ;; simple non-elpa packages (no config)
 (require 'powershell)
 (require 'rainbow-delimiters)
@@ -94,8 +91,11 @@
       '(yoz-theme
         yoz-evil
         yoz-magit
+        yoz-helm
+        yoz-project
         yoz-orgmode
         yoz-lisp
+        yoz-ml
         yoz-web
         yoz-js))
 

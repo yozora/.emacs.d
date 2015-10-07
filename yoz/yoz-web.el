@@ -1,6 +1,7 @@
 ;; yoz-web.el -- Web mode config
 
 (require 'web-mode) ;; reference - http://web-mode.org/
+(package-require 'htmlize)
 
 (add-to-list 'auto-mode-alist '("\\.as[cp]x?\\'" .web-mode))
 (add-to-list 'auto-mode-alist '("\\.asp\\'" . web-mode))
