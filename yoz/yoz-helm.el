@@ -2,7 +2,9 @@
 
 (package-require 'helm)
 (global-set-key (kbd "<print>") 'helm-mini)
-(define-key evil-normal-state-map "  " 'helm-mini)
+(package-require 'helm-projectile)
+
+(define-key evil-normal-state-map "  " 'helm-projectile)
 
 ; Projectile integration
 ; (package-require 'helm-projection)

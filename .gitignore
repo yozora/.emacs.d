@@ -2,3 +2,6 @@ bak/*
 elpa/*
 url/*
 auto-save-list/*
+recentf
+projectile.cache
+projectile-bookmarks.eld
