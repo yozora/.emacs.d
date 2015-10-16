@@ -1,11 +1,9 @@
 ;;; yoz-evil.el - Evil mode setup
 
-(setq evil-want-C-u-scroll t)
-(require 'undo-tree)
-(require 'evil)
+(package-require 'evil)
 (evil-mode 1)
-(require 'surround)
-(global-surround-mode 1)
+(package-require 'evil-surround)
+(global-evil-surround-mode 1)
 
 ;; change mode-line color by evil state
 (lexical-let ((default-colour (cons (face-background 'mode-line)
