@@ -93,9 +93,12 @@
         yoz-magit
         yoz-helm
         yoz-project
+        yoz-flycheck
         yoz-orgmode
         yoz-lisp
         yoz-ml
+        yoz-haskell
+        yoz-purescript
         yoz-web
         yoz-js))
 
