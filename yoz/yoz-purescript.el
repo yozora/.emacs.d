@@ -8,9 +8,9 @@
 
 (add-hook 'purescript-mode-hook 'turn-on-purescript-indentation)
 
-(package-require 'flycheck-purescript)
+; (package-require 'flycheck-purescript)
 
-(eval-after-load 'flycheck
-      '(flycheck-purescript-setup))
+; (eval-after-load 'flycheck
+;       '(flycheck-purescript-setup))
                               
 (provide 'yoz-purescript)
